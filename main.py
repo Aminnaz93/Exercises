@@ -1477,9 +1477,7 @@ fibonacci()'''
 
 #################################
 
-print("Hello")
-
-
+print("Bye bye bye")
     
 
 
