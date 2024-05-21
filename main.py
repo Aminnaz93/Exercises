@@ -1475,8 +1475,23 @@ for index, number in enumerate(fibonacci()):
 
 fibonacci()'''
 
-#################################
+###############################
 
-
+def main():
+    lista = [1,2,3,4,5,6,7,8,9,10]
+    print("Listan innehåller:" , lista)
+    
+    while True:
+        try:
+            index = int(input("Ange en index för att hämta ett element från listan: "))
+            print(f"Elementet på index {index} är: {lista[index]}")
+            break
+        except IndexError:
+            print("Fel: Indexet bör vara mindre och inte negativt än listans längd.")
+        except ValueError:
+            print("Fel: Ange en giltig heltal.")
+        
+if __name__ == "__main__":
+    main()
 
 
