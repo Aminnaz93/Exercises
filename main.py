@@ -1552,7 +1552,7 @@ print(y["city"])'''
 
 #################################
 
-def main():
+'''def main():
     lista = [1,2,3,4,5,6,7,8,9,10]
     print("Elementen i listan är: ", lista)
 
@@ -1567,8 +1567,12 @@ def main():
             print("Fel: Ange en giltig heltal. ")
 
 if __name__ == "__main__":
-    main()
+    main()'''
 
-    ##############################
+##############################
 
-    
+from func import dog
+
+dog1 = dog("zizou", 31,"Pitbull" , "voff voff")
+
+print(dog1.get_name())
