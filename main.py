@@ -1504,7 +1504,7 @@ print(new_list)'''
 
 ################################
 
-a = 0
+'''a = 0
 b = 1
 
 sum = 0
@@ -1519,13 +1519,23 @@ while True:
         sum += b
 
 
-print(sum)
+print(sum)'''
 
 #############################
 
-# Vi importerar sys-modulen för att kunna hantera argument som ges via kommandoraden
 import sys
 
 def summa_av_argument():
 
     argument = map(int,sys.argv[1:])
+
+    total_summa = sum(argument)
+
+    print("Summan är:", total_summa)
+
+
+if __name__ == "__main__":
+    summa_av_argument()
+
+
+##############################
