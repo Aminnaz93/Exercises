@@ -1477,7 +1477,7 @@ fibonacci()'''
 
 ###############################
 
-def main():
+'''def main():
     lista = [1,2,3,4,5,6,7,8,9,10]
     print("Listan innehåller:" , lista)
     
@@ -1492,12 +1492,22 @@ def main():
             print("Fel: Ange en giltig heltal.")
         
 if __name__ == "__main__":
-    main()
+    main()'''
 
 
 ################################
 
+'''my_list  = [1,2,3,4,5,6]
+new_list = my_list[1:-2]
 
+print(new_list)'''
 
+################################
 
+def sum_jämna_fibonacci(limit):
+    a = 1
+    b = 2
 
+    summa = 0
+
+    
