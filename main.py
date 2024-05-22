@@ -1523,3 +1523,9 @@ print(sum)
 
 #############################
 
+# Vi importerar sys-modulen för att kunna hantera argument som ges via kommandoraden
+import sys
+
+def summa_av_argument():
+
+    argument = map(int,sys.argv[1:])
