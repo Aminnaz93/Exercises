@@ -1504,10 +1504,19 @@ print(new_list)'''
 
 ################################
 
-def sum_jämna_fibonacci(limit):
-    a = 1
-    b = 2
+a = 0
+b = 1
 
-    summa = 0
+sum = 0
 
+while True:
+    a,b = b, a + b
     
+    if b >= 4000000:
+        break
+
+    if b % 2 == 0:
+        sum += b
+
+
+print(sum)
