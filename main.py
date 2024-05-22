@@ -1523,7 +1523,7 @@ print(sum)'''
 
 #############################
 
-import sys
+'''import sys
 
 def summa_av_argument():
 
@@ -1535,8 +1535,36 @@ def summa_av_argument():
 
 
 if __name__ == "__main__":
-    summa_av_argument()
+    summa_av_argument()'''
 
 
 ##############################
+'''import json
 
+# some JSON:
+x = '{ "name":"John", "age":30, "city":"New York"}'
+
+# parse x:
+y = json.loads(x)
+
+# the result is a Python dictionary:
+print(y["city"])'''
+
+#################################
+
+def main():
+    lista = [1,2,3,4,5,6,7,8,9,10]
+    print("Elementen i listan är: ", lista)
+
+    while True:
+        try:
+            index = int(input("Ange en index för att hämta ett element från listan: "))
+            print(f"Elementet på index {index} är: {lista[index]}")
+            break
+        except IndexError:
+            print("Fel: Indexet bör vara mindre och inte negativt än listans längd.")
+        except ValueError:
+            print("Fel: Ange en giltig heltal. ")
+
+if __name__ == "__main__":
+    main()
