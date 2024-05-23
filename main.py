@@ -1571,8 +1571,21 @@ if __name__ == "__main__":
 
 ##############################
 
-from func import dog
+'''from func import dog
 
 dog1 = dog("zizou", 31,"Pitbull" , "voff voff")
 
-print(dog1.get_name())
+print(dog1.get_name())'''
+
+#############################
+
+'''import sys
+
+file = open(sys.argv[1])
+lines = file.readlines()
+
+print("Antal rader: ", len(lines))'''
+
+#############################
+
+
