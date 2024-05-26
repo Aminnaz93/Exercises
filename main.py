@@ -1588,4 +1588,9 @@ print("Antal rader: ", len(lines))'''
 
 #############################
 
-print("Hello World")
+str1 = "Hello world"
+
+if "H" not in str1:
+    print("Has a H")
+else: 
+    print("default")
