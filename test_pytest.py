@@ -9,7 +9,7 @@ def test_add():
 def test_sub():
     assert sub(10,5) == 5
     assert sub(4,2) == 2
-    assert sub(8,7) == 0
+    assert sub(8,7) == 1
 
 def test_mult():
     assert mult(3, 4) == 12, "Should be 12"
@@ -25,3 +25,6 @@ def test_div():
 with pytest.raises(ZeroDivisionError):
     div(5, 0)
 
+
+if __name__ == "__main__":
+    pytest.main()
