@@ -1606,4 +1606,8 @@ print(sum1)'''
 
 ###############################
 
+from functions import *
 
+sum1 = add(2,4)
+
+print(sum1)

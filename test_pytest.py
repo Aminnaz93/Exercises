@@ -7,9 +7,9 @@ def test_add():
     assert add(-2, -2) == -4, "Should be -4"
 
 def test_sub():
-    assert sub(10,5) == 5
-    assert sub(4,2) == 2
-    assert sub(8,7) == 1
+    assert sub(10,5) == 5, "Should be 5"
+    assert sub(4,2) == 2, "Should be 2"
+    assert sub(8,7) == 1, "Should be 1"
 
 def test_mult():
     assert mult(3, 4) == 12, "Should be 12"
