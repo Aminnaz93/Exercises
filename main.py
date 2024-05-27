@@ -1588,13 +1588,22 @@ print("Antal rader: ", len(lines))'''
 
 #############################
 
-resultat = 2 ** 1000
+'''resultat = 2 ** 1000
 
 resultat_str = str(resultat)
 
 summa_siffror = sum(int(siffra) for siffra in resultat_str)
 
-print("Summa av 2^1000 är: ", summa_siffror)
+print("Summa av 2^1000 är: ", summa_siffror)'''
 
 ##############################
+
+'''print(sum([2,3]))
+
+sum1 = sum([3,4])
+
+print(sum1)'''
+
+###############################
+
 
