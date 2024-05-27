@@ -1588,9 +1588,13 @@ print("Antal rader: ", len(lines))'''
 
 #############################
 
-str1 = "Hello world"
+resultat = 2 ** 1000
 
-if "H" not in str1:
-    print("Has a H")
-else: 
-    print("default")
+resultat_str = str(resultat)
+
+summa_siffror = sum(int(siffra) for siffra in resultat_str)
+
+print("Summa av 2^1000 är: ", summa_siffror)
+
+##############################
+
