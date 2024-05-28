@@ -5,6 +5,7 @@ def test_add():
     assert add(5, 3) == 8, "Should be 8"
     assert add(-1, 1) == 0, "Should be 0"
     assert add(-2, -2) == -4, "Should be -4"
+    assert add(0.1,0.2) == pytest.approx(0.3), "Should be 0.30000000000000004, but approximately 0.3"
 
 def test_sub():
     assert sub(10,5) == 5, "Should be 5"
@@ -30,4 +31,3 @@ if __name__ == "__main__":
     pytest.main()
 
 
-    

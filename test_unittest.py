@@ -8,6 +8,8 @@ class TestCalcFunctions(unittest.TestCase):
         self.assertEqual(add(1, 2), 3)
         self.assertEqual(add(-1, 1), 0)
         self.assertEqual(add(0, 0), 0)
+        result = add(0.1, 0.2)
+        self.assertAlmostEqual(result, 0.3, places=15, msg="Should be approximately 0.3")
 
     def test_sub(self):
         self.assertEqual(sub(3, 1), 2)
