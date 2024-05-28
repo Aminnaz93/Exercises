@@ -21,10 +21,13 @@ def test_div():
     assert div(5, 2) == 2.5, "Should be 2.5"
     assert div(-6, 3) == -2, "Should be -2"
 
-
+# Test för att undvika division med noll
 with pytest.raises(ZeroDivisionError):
     div(5, 0)
 
 
 if __name__ == "__main__":
     pytest.main()
+
+
+    
