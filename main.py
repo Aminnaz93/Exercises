@@ -1611,3 +1611,7 @@ from functions import *
 sum1 = add(2,4)
 
 print(sum1)
+
+sum2 = sum([3,4])
+
+print(sum2)
