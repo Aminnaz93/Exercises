@@ -1622,3 +1622,14 @@ import math
 
 faktoriell_siffra_summa = str(math.factorial(100))
 
+print("Produkten av den faktoriella siffran 100: ",faktoriell_siffra_summa)
+
+print()
+
+summa_siffra = sum(int(siffra) for siffra in faktoriell_siffra_summa)
+
+print(summa_siffra)
+
+##################################
+
+
