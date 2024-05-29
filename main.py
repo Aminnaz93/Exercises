@@ -1618,4 +1618,7 @@ print(sum2)'''
 
 #################################
 
+import math
+
+faktoriell_siffra_summa = str(math.factorial(100))
 
