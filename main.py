@@ -1618,7 +1618,7 @@ print(sum2)'''
 
 #################################
 
-import math
+'''import math
 
 faktoriell_siffra_summa = str(math.factorial(100))
 
@@ -1628,8 +1628,25 @@ print()
 
 summa_siffra = sum(int(siffra) for siffra in faktoriell_siffra_summa)
 
-print(summa_siffra)
+print(summa_siffra)'''
 
 ##################################
+
+for num in range(1,101):
+    string = ""
+    if num % 3 == 0:
+        string = string + "Fizz"
+    if num % 4 == 0:
+        string = string + "Whoops"
+    if num % 5 == 0:
+        string = string + "Buzz"
+    if num % 7 == 0:
+        string = string + "Max"
+    if string == "":
+        string = string + str(num)
+    print(string)
+    
+##################################
+
 
 
