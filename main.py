@@ -1632,7 +1632,7 @@ print(summa_siffra)'''
 
 ##################################
 
-for num in range(1,101):
+'''for num in range(1,101):
     string = ""
     if num % 3 == 0:
         string = string + "Fizz"
@@ -1644,9 +1644,22 @@ for num in range(1,101):
         string = string + "Max"
     if string == "":
         string = string + str(num)
-    print(string)
+    print(string)'''
     
 ##################################
+
+'''file = open("demofile.txt", "w")
+
+file.write("Detta är en ny rad med text")
+
+file.close()'''
+
+##################################
+
+file = open("demofile.txt")
+
+print(file.read())
+
 
 
 
