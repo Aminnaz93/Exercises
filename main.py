@@ -1813,15 +1813,27 @@ print(y["city"])'''
 
 ##################################
 
-def take_away_4_in_loops():
+'''def take_away_4_in_loops():
     for i in range(1,21):
         if i == 4 or i == 1:
             continue
         print(i)
 
 
-take_away_4_in_loops()
+take_away_4_in_loops()'''
 
 ##################################
+
+'''file = open("demofile.txt")
+
+content = file.read()
+
+print(len(content))
+
+print(type(content))'''
+
+#################################
+
+
 
 
