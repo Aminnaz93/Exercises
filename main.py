@@ -1673,4 +1673,122 @@ if __name__ == "__main__":
 else: 
     print("Från andra modulen")'''
 
+#################################
+
+'''class Item:
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+    
+    def getName(self):
+        return self.name
+    
+    def getDesctription(self):
+        return self.description
+
+
+
+class Weapon(Item):
+    def __init__(self, name, description, damage):
+        Item.__init__(self, name, description)
+        self.damage = damage
+
+    def getDamage(self):
+        return self.damage
+
+    
+
+bottle = Item("Bottle", "A bottle with blue fluid")
+sword = Weapon("Sword", " A wooden sword", 10)
+
+print(sword.getName() + sword.getDesctription())
+print("Damage:", sword.getDamage())
+
+print(bottle.getName(), bottle.getDesctription())'''
+
+
+#################################
+
+'''my_list = [1,2,3,4,5,6,7,8,9,10]
+my_str = "Hej hur är det med dig idag."
+
+
+print(my_list)
+print(*my_list)
+
+print()
+
+print(my_str)
+print(*my_str)
+
+def summera(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+    
+print(summera(1,2,3))
+
+def dic(**kwargs):
+    for key,value in kwargs.items():
+        print(f"{key}: {value}")
+
+dic(namn = "Amin", ålder = 31)'''
+
+##################################
+'''import pprint
+
+
+my_dict = {'name': 'Andreas', 'age': 37, 'email': 'andreas.nilssonstrom@kyh.se'}
+
+print(my_dict)
+print()
+
+pprint.pprint(my_dict)
+print()
+pprint.pprint(my_dict, width=1)'''
+
+
+###################################
+
+'''def walk(step):
+    if step == 0:
+        return 
+    walk(step - 1)
+    print(step)
+
+
+walk(3)'''
+
+###################################
+
+'''file = open("Hello.txt", "x")  # Skapa en ny fil med namnet "Hello.txt"
+file.close()  # Stäng filen
+
+# Öppna filen igen i läget "w" (för att skriva till filen)
+file = open("Hello.txt", "w")
+file.write("Hello, how are you today?")  # Skriv texten till filen
+file.close()  # Stäng filen när du är klar med att skriva
+
+# Öppna filen för läsning
+file = open("Hello.txt", "r")
+print(file.read())  # Läs och skriv ut innehållet i filen
+file.close()'''  # Stäng filen när du är klar med att läsa
+
+##################################
+
+
+'''file = open("Hello.txt", "r")
+print(file.read())'''
+
+##################################
+
+
+
+
+
+
+
+
+
 
