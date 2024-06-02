@@ -1783,10 +1783,35 @@ print(file.read())'''
 
 ##################################
 
+'''import sys
+
+def summa_av_argument():
+
+    argument = map(int,sys.argv[1:])
+
+    total_summa = sum(argument)
+
+    print("Summan är:", total_summa)
 
 
+if __name__ == "__main__":
+    summa_av_argument()'''
 
 
+#################################
+
+'''import json
+
+# some JSON:
+x = '{ "name":"John", "age":30, "city":"New York"}'
+
+# parse x:
+y = json.loads(x)
+
+# the result is a Python dictionary:
+print(y["city"])'''
+
+##################################
 
 
 
