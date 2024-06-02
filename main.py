@@ -1656,10 +1656,21 @@ file.close()'''
 
 ##################################
 
-file = open("demofile.txt")
+'''file = open("demofile.txt")
 
-print(file.read())
+print(file.read())'''
+
+##################################
+
+'''print("Detta kommer alltid att köras.")
+
+def Hello():
+    print("första modulen")
 
 
+if __name__ == "__main__":
+    Hello()
+else: 
+    print("Från andra modulen")'''
 
 
