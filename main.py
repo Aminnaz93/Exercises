@@ -1834,6 +1834,31 @@ print(type(content))'''
 
 #################################
 
+'''total = 0
+
+for num in range(1,1001):
+    total += pow(1,1)
+
+total = total % 10**10
+
+print(total)'''
+
+##################################
+ 
+import math
+
+resultat = 2520
+
+for i in range(1,21):
+    resultat = resultat * i // math.gcd(resultat, i)
+
+    print(resultat)
+
+
+
+
+
+
 
 
 
