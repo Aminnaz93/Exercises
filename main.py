@@ -1845,22 +1845,122 @@ print(total)'''
 
 ##################################
  
-import math
+'''import math
 
 resultat = 2520
 
 for i in range(1,21):
     resultat = resultat * i // math.gcd(resultat, i)
 
-    print(resultat)
+    print(resultat)'''
 
 
 ##################################
 
+'''import time 
+
+counter = 0
+
+print(counter)
+
+counter = counter + 1
+
+time.sleep(1)'''
+
+#################################
 
 
+'''my_list = [1,2,3,4,5]
+my_str = ["hello", "hajbajs"]
+
+for x in my_str:
+    my_list.append(x)
+
+print(my_list)'''
+
+##################################
+
+'''my_tuple = (2,3,4532,54,352,4)
+
+my_tuple2 = ("HELOO", "JDKLJA", "nfdjlks")
+
+my_tuple3 = my_tuple + my_tuple2
+
+print(my_tuple3)
+
+print()
+
+my_set = {1,2,3,4,5,5,5,5,5}
+
+print(my_set)
+print(type(my_set))'''
+
+###############################
+
+'''my_dict = {"Name" : "Amin", "Age" : 31}
+
+for x,y in my_dict.items():
+    print(x,y)'''
+
+###############################
+
+'''count = 0
+
+while count < 10:
+    count += 1
+    if count == 3:
+        continue
+    elif count == 6:
+        break
+    print(count)'''
+   
+##############################
+
+'''def my_function(n):
+    return n
+
+cars = ["Mercedes", "Toyota", "Rolls Royce"]
+
+print(cars[2])
+
+x = cars[0]
+
+print(x)
+
+print()
+
+cars.append("BMW")
+index_list = cars.index("BMW")
+
+print(index_list)
+
+for i in range(len(cars)):
+    print(cars[i])'''
+
+##############################
+
+'''while True:
+    answer = int(input("Ge mig ett tal mellan 1-5:"))
+
+    if answer != 4 and answer < 2:
+        print("Du har tryckt in 1.")
+    elif answer > 3:
+        print("Du har tryckt en siffra större än 3.")
+    else: 
+        print("Tryck vad du vill.")
+        break'''
+
+##########################
+
+'''import platform
 
 
+x = platform.system()
 
+print(x)
 
+y = dir(platform)
 
+print(y)'''
+
+############################
