@@ -1,4 +1,2 @@
-Detta är en ny rad med text
-
-
-kan du skriva ut detta också?
+Hej på dig. allt bra med dig ?
+Nu finns det en ny rad med text.

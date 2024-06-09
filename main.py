@@ -1964,3 +1964,47 @@ y = dir(platform)
 print(y)'''
 
 ############################
+
+'''import datetime
+
+x = datetime.datetime.now()
+
+print(x)
+
+print(x.year)
+print(x.month)
+print(x.day)
+print(x.second)'''
+
+############################
+
+'''try:
+    print(x)
+except:
+    print("Detta skrivs ut eftersom x är inte definierad. ")
+'''
+
+############################
+
+'''file = open("demofile.txt", "w")
+
+file.write("Hej på dig. allt bra med dig ?")
+
+file = open("demofile.txt", "r")
+
+print(file.read())
+
+file.close()'''
+
+############################
+
+'''file = open("demofile.txt", "a")
+
+file.write("\nNu finns det en ny rad med text.")
+file.close()
+
+file = open("demofile.txt" , "r")
+
+print(file.read())'''
+
+#############################
