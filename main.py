@@ -2018,3 +2018,58 @@ for i in my_list:
 
 ###########################
 
+'''def nummer_till_tal(n):
+    num_to_19 = {1: "one", 2: "two",3: "three", 4: "four",5: "five",6: "six",7: "seven",8: "eight",9: "nine",10: "ten",11: "eleven",12: "twelve",13: "thirteen",14: "fourteen",15: "fifthteen",16: "sixteen",17: "seventeen",18: "eighteen",19: "nineteen"}
+    twenty_to_hundred = {20: "twenty", 30: "thirty", 40: "fourty", 50: "fifty", 60: "sixty", 70: "seventy", 80: "eighty", 90: "ninety"}
+    hundred_to_ninehundred = {100: "hundred", 200: "twohundred", 300: "threehundred", 400: "fourhundred", 500: "fivehundred", 600: "sixhundred", 700: "sevenhundred", 800: "eighthundred", 900: "ninehundred"}
+    thousand = {1000: "thousand"}
+
+
+    
+def ord(n):
+    if n < 20:
+       return #någonting
+    elif n < 100:
+       return #någonting
+    elif n < 1000:
+       return  #någonting
+    elif n == 1000:
+        return''' #någonting
+
+def number_to_words():
+    num_to_19 = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+                 "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+    tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+    hundreds = ["", "onehundred", "twohundred", "threehundred", "fourhundred", "fivehundred",
+                "sixhundred", "sevenhundred", "eighthundred", "ninehundred"]
+    
+    def words(n):
+        if n < 20:
+            return num_to_19[n]
+        elif n < 100:
+            return tens[n // 10] + (num_to_19[n % 10] if n % 10 != 0 else "")
+        elif n < 1000:
+            return hundreds[n // 100] + ("and" + words(n % 100) if n % 100 != 0 else "")
+        elif n == 1000:
+            return "onethousand"
+        return ""
+
+    # Räknar bokstäverna för talen från 1 till 1000
+    return sum(len(words(i).replace(" ", "")) for i in range(1, 1001))
+
+# Anropa funktionen och skriv ut resultatet
+print(number_to_words())
+
+############################
+
+
+
+
+    
+
+
+
+
+    
+    
+    
