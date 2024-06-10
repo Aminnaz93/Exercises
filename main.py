@@ -2036,7 +2036,7 @@ def ord(n):
     elif n == 1000:
         return''' #någonting
 
-def number_to_words():
+'''def number_to_words():
     num_to_19 = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
                  "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
     tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
@@ -2058,10 +2058,9 @@ def number_to_words():
     return sum(len(words(i).replace(" ", "")) for i in range(1, 1001))
 
 # Anropa funktionen och skriv ut resultatet
-print(number_to_words())
+print(number_to_words())'''
 
 ############################
-
 
 
 
