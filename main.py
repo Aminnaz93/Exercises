@@ -2077,7 +2077,15 @@ print(x.second)'''
 ############################
 
 
+sentence = input("Write something: ")
 
+words = sentence.split()
+
+for i,word in enumerate(sentence.split()):
+    if not i % 2 == 0:
+        print(word[::-1], end= " ")
+    else:
+        print(word)
 
 
 
