@@ -2102,7 +2102,7 @@ for i,word in enumerate(sentence.split()):
 Slut'''
 
 
-def add(a,b):
+'''def add(a,b):
     return a + b
 
 def sub(a,b):
@@ -2144,5 +2144,29 @@ while True:
         elif choice == '4':
             print("Resultat:", div(num1, num2))
     else:
-        print("Ogiltigt val.")
+        print("Ogiltigt val.")'''
 
+###############################
+
+'''1. Funktion SummaAvJämnaTal(lista):
+2.     skapa en variabel summa och sätt den till 0
+3.     för varje tal i listan:
+4.         om talet är jämnt:
+5.             lägg till talet till summa
+6.     returnera summa
+7. Slut på funktion'''
+
+
+def SummaAvJämnaTal(lista):
+    summa = 0
+    for tal in lista:
+        if tal % 2 == 0:  # Kolla om talet är jämnt
+            summa += tal   # Lägg till talet till summan
+    return summa
+
+
+tal_lista = [1,2,3,4,5,7,8,9,10]
+
+resultat = SummaAvJämnaTal(tal_lista)
+
+print("Resultatet av listan är: ", resultat)
