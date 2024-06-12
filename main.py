@@ -2077,7 +2077,7 @@ print(x.second)'''
 ############################
 
 
-sentence = input("Write something: ")
+'''sentence = input("Write something: ")
 
 words = sentence.split()
 
@@ -2085,11 +2085,64 @@ for i,word in enumerate(sentence.split()):
     if not i % 2 == 0:
         print(word[::-1], end= " ")
     else:
-        print(word)
+        print(word)'''
+
+##############################
+
+'''Start
+
+1. Fråga användaren vilken operation de vill utföra (t.ex. addition, subtraktion, multiplikation, division)
+2. Läs in två tal från användaren (num1 och num2)
+3. Utför den valda operationen på num1 och num2
+4. Skriv ut resultatet
+5. Fråga användaren om de vill fortsätta att använda räknaren
+   a. Om ja, gå till steg 1
+   b. Annars, avsluta programmet
+
+Slut'''
 
 
+def add(a,b):
+    return a + b
+
+def sub(a,b):
+    return a - b
+
+def mult(a,b):
+    return a * b
+
+def div(a,b):
+    if b == 0:
+        return "Error"
+    else:
+        return a / b
 
 
-    
-    
-    
+while True:
+    print("Välj operation:")
+    print("1. Addition")
+    print("2. Subtraktion")
+    print("3. Multiplikation")
+    print("4. Division")
+    print("5. Avsluta")
+
+    choice = input("Ange ditt val mellan 1-5: ")
+
+    if choice in ("1", "2", "3", "4", "5"):
+        if choice == '5':
+            print("Avslutar programmet.")
+            break
+
+        num1 = int(input("Ange första talet: "))
+        num2 = int(input("Ange det andra talet: "))
+        if choice == '1':
+            print("Resultat: ", add(num1,num2))
+        elif choice == '2':
+            print("Resultat:", sub(num1, num2))
+        elif choice == '3':
+            print("Resultat:", mult(num1, num2))
+        elif choice == '4':
+            print("Resultat:", div(num1, num2))
+    else:
+        print("Ogiltigt val.")
+
