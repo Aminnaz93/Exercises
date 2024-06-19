@@ -2174,7 +2174,7 @@ print("Resultatet av listan är: ", resultat)'''
 
 ###############################
 
-import tkinter as tk
+'''import tkinter as tk
 
 def click():
     global counter
@@ -2206,6 +2206,14 @@ btn.grid(column=0, row=1)
 txt = tk.Entry(root)
 txt.grid(column=1, row=1)
 
-root.mainloop()
+root.mainloop()'''
 
 
+################################
+
+import requests
+
+respons = requests.get("https://api.sr.se/api/v2/channels/'")
+
+print(respons.status_code)
+print(respons.text)
