@@ -2174,3 +2174,38 @@ print("Resultatet av listan är: ", resultat)'''
 
 ###############################
 
+import tkinter as tk
+
+def click():
+    global counter
+    try:
+        num = int(txt.get())  # Get the string from Entry and convert to int
+        if num > 0:
+            counter += num  # Increase counter by the specified number of clicks
+            lbl.configure(text=f"Someone just clicked the button {counter} times")
+        else:
+            lbl.configure(text="Invalid input. Enter a positive integer.")
+    except ValueError:
+        lbl.configure(text="Invalid input. Enter a valid integer.")
+
+root = tk.Tk()
+root.title("Our first GUI")
+root.geometry("800x600")
+
+# Label widget with grid layout
+lbl = tk.Label(root, text="Hello World")
+lbl.grid(column=0, row=0)
+
+counter = 0
+
+# Button widget with command assigned
+btn = tk.Button(root, text="Change text", foreground="Green", command=click)
+btn.grid(column=0, row=1)
+
+# Entry widget for user input
+txt = tk.Entry(root)
+txt.grid(column=1, row=1)
+
+root.mainloop()
+
+
