@@ -2157,7 +2157,7 @@ while True:
 7. Slut på funktion'''
 
 
-def SummaAvJämnaTal(lista):
+'''def SummaAvJämnaTal(lista):
     summa = 0
     for tal in lista:
         if tal % 2 == 0:  # Kolla om talet är jämnt
@@ -2169,4 +2169,8 @@ tal_lista = [2,2,2]
 
 resultat = SummaAvJämnaTal(tal_lista)
 
-print("Resultatet av listan är: ", resultat)
+print("Resultatet av listan är: ", resultat)'''
+
+
+###############################
+
