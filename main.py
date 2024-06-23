@@ -2211,9 +2211,81 @@ root.mainloop()'''
 
 ################################
 
-import requests
+'''import requests
 
 respons = requests.get("https://api.sr.se/api/v2/channels/'")
 
 print(respons.status_code)
-print(respons.text)
+print(respons.text)'''
+
+###############################
+
+'''print("Welcome to the Quiz game!")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play: ")
+score = 0
+
+
+answer = input("What does CPU stand for? ")
+if answer.lower() == "central processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect") 
+
+answer = input("What does GPU stand for? ")
+if answer.lower() == "graphics processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect") 
+
+answer = input("What does RAM stand for? ")
+if answer.lower() == "random access memory":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect") 
+
+answer = input("What does PSU stand for? ")
+if answer.lower() == "power supply":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect") 
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score/4) * 100)  + "% ")'''
+
+#################################
+
+import random
+
+top_of_range = input("Type a number: ")
+
+if top_of_range.isdigit():
+    top_of_range = int(top_of_range)
+
+    if top_of_range <= 0:
+        print("Please type a number larger than 0 next time. ")
+        quit()
+else:
+    print("Please type a number next time. ")
+    quit()
+
+
+random_number = random.randint(0, top_of_range)
+print(random_number)
+
+while True:
+    
+
+
+
+
+
