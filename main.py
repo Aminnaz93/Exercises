@@ -2362,7 +2362,7 @@ else:
 
 ##################################
 
-name = input("Type your name: ")
+'''name = input("Type your name: ")
 print("Welcome", name, "to this adventure!")
 print()
 
@@ -2397,7 +2397,7 @@ while True:
             answer = input("You cross the bridge and meet a stranger. Do you talk to them? (yes/no) ").lower()
 
             if answer == "yes":
-                print("You talk to the stranger and they give you gold. You WIN!")
+                print("You talked to the stranger and they give you gold. You WIN!")
                 break
 
             elif answer == "no":
@@ -2416,4 +2416,101 @@ while True:
         print("Not a valid option. Please enter 'left' or 'right'.")
         continue
 
-print("Thank you for playing", name)
+print("Thank you for playing", name)'''
+
+######################################
+
+'''name = input("Type in your name: ")
+print("Welcome", name, "to this adventure.")
+print()
+
+while True:
+    answer = input("You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go? ").lower()
+
+    if answer == "left":
+        print()
+        answer = input("You come to a river, you can walk around it or swim across? Type 'walk' to walk and 'swim' to swim across: ").lower()
+
+        if answer == "swim":
+            print()
+            print("You swam across and were eaten by an alligator. You lose.")
+            break
+        
+        elif answer == "walk":
+            print()
+            print("You walked many miles, you ran out of water and lost. ")
+            break
+
+        else:
+            print()
+            print("Not a valid option. Try again...")
+            continue
+
+
+    elif answer == "right":
+        print()
+        answer = input("You come to a bridge, it looks wobbly, do you want to cross it or head back? (cross/back) ").lower()
+
+        if answer == "back":
+            print()
+            print("U walked back and lost... ")
+            break
+
+        elif answer == "cross":
+            print()
+            answer = input("You cross the bridge and meet a stranger. Do you talk to them? (yes/no) ").lower()
+
+            if answer == "yes":
+                print()
+                print("You talked to the stranger and because of your kindness, the stranger gives you gold... YOU WIN!!! ")
+                break
+
+            elif answer == "no":
+                print()
+                print("You ignored the stranger and they felt offended... YOU LOSE!!! ")
+                break
+            
+            else:
+                print("Not a valid option. please try again.")
+                continue
+
+    else: 
+        print("Not a valid option, please try again. ")
+
+
+print()
+print("Thank you for playing", name)'''
+
+######################################
+from cryptography.fernet import Fernet
+
+master_pwd = input("What is the master password? ")
+
+def view():
+        with open("password.txt", "r" ) as file:
+            for line in file.readlines():
+                data = line.rstrip()
+                user, passw = data.split("|")
+                print("User:", user, "| Password:", passw)
+    
+
+def add():
+    name = input("Account name: ")
+    pwd = input("Password: ")
+
+    with open("password.txt", "a" ) as file:
+        file.write(name + "|" + pwd + "\n")
+
+
+while True: 
+    mode = input("Would you like to ('add') a new password or ('view') existing ones (view/add)?, press 'q' to quit: ").lower()
+    if mode == "q":
+        break
+
+    if mode == "view":
+        view()
+    elif mode == "add":
+        add()
+    else:
+        print("Invalid mode. ")
+        continue
