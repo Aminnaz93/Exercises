@@ -2535,3 +2535,36 @@ while True:
 
 ################################
 
+print("Welcome to the average calculator.")
+
+numbers = []
+total_sum = 0
+
+while True:
+    user_input = input("Enter a number or press 'Q' to quit. ")
+
+    if user_input == "q":
+        break
+
+    try:
+        number = float(user_input)
+        numbers.append(number)
+
+        total_sum += number
+
+    except ValueError:
+        print()
+        print("Invalid input! Please enter a valid number.")
+
+    
+    if numbers:
+        average = total_sum / len(numbers)
+        print("The average of the numbers is", average)
+    
+    else:
+        print()
+        print("No numbers entered. Cannot calculate average. Please try again.")
+        continue
+
+
+print("Thank you for using the Average Calculator.")
