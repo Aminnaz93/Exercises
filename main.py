@@ -2716,34 +2716,31 @@ def sort_list(lst):
 def print_list(lst):
     print("Current list:", lst)
 
-def main():
-    lst = []
-    print("Welcome to the list management program!")
+lst = []
+print("Welcome to the list management program!")
     
-    while True:
-        print_menu()
-        choice = input("Enter your choice (1-6): ")
+while True:
+    print_menu()
+    choice = input("Enter your choice (1-6): ")
 
-        if choice == '1':
-            add_element(lst)
-        elif choice == '2':
-            remove_element(lst)
-        elif choice == '3':
-            search_element(lst)
-        elif choice == '4':
-            sort_list(lst)
-        elif choice == '5':
-            print_list(lst)
-        elif choice == '6':
-            print("Exiting the program...")
-            break
-        else:
-            print("Invalid choice. Please enter a number between 1 and 6.")
+    if choice == '1':
+        add_element(lst)
+    elif choice == '2':
+        remove_element(lst)
+    elif choice == '3':
+        search_element(lst)
+    elif choice == '4':
+        sort_list(lst)
+    elif choice == '5':
+        print_list(lst)
+    elif choice == '6':
+        print("Exiting the program...")
+        break
+    else:
+        print("Invalid choice. Please enter a number between 1 and 6.")
 
-    print("Thank you for using the list management program!")
+print("Thank you for using the list management program!")
 
-if __name__ == "__main__":
-    main()
 
 
 
