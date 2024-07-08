@@ -2671,7 +2671,7 @@ while True:
 
 #############################################
 
-def print_menu():
+'''def print_menu():
     print("\nMenu:")
     print("1. Add an element to the list")
     print("2. Remove an element from the list")
@@ -2739,9 +2739,15 @@ while True:
     else:
         print("Invalid choice. Please enter a number between 1 and 6.")
 
-print("Thank you for using the list management program!")
+print("Thank you for using the list management program!")'''
 
+#####################################
 
+my_list = [1,234,543543,6452,3,1,3,2,3,4,5,6,7,9,10]
+
+my_list.sort()
+
+print(my_list)
 
 
 
