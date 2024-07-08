@@ -2572,7 +2572,7 @@ print("Thank you for using the Average Calculator.")'''
 
 #################################
 
-print("Welcome to the Average Calculator. ")
+'''print("Welcome to the Average Calculator. ")
 
 numbers = []
 total_sum = 0
@@ -2603,6 +2603,39 @@ while True:
         continue
 
 
-print("Thank you for using the Average Calculator...")
+print("Thank you for using the Average Calculator...")'''
+
+
+########################################
+
+'''print("Welcome to the Sum calculator. ")
+
+while True:
+    
+    user_input = input("Enter a number or press 'Q' to quit: ").lower()
+
+    if user_input == "Q".lower():
+        print("Exiting the program.")
+        break
+
+    try:
+        num = int(user_input)
+
+        if num < 1:
+            print("Sum calculation is not defined for zero or negative numbers.")
+            continue
+        else:
+            sum_value = 0
+            for i in range(0, num):
+                sum_value += 1
+                print("The sum of all the positive integers up to", num, "is", sum_value)
+
+    except ValueError:
+        print("Invalid input. Please enter a valid positive integer or 'q' to quit. Please try again. ")'''
+
+#####################################
+
+
+
 
 
