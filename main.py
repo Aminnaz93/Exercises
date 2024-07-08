@@ -2635,6 +2635,115 @@ while True:
 
 #####################################
 
+'''print("Welcome to the temperature converter. ")
+
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+while True:
+
+    choice = input("Enter '1' to convert from Celsius to Fahrenheit, '2' to convert from Fahrenheit to Celsius, or 'q' to quit:").lower()
+    
+    if choice == "Q".lower():
+        print("Exiting the program. ")
+        break
+    elif choice == '1':
+        try:
+            celsius = float(input("Enter temperatur in celsius: "))
+            fahrenheit = celsius_to_fahrenheit(celsius)
+            print(f"{celsius} Celsius is equal to {fahrenheit} Fahrenheit.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number for Celsius temperature.")
+
+    elif choice == '2':
+        try:
+            fahrenheit = float(input("Enter temperatur in fahrenheit: "))
+            celsius = fahrenheit_to_celsius(fahrenheit)
+            print(f"{fahrenheit} Fahrenheit is equal to {celsius} Celsius. ")
+        except ValueError:
+            print("Invalid input. Please enter a valid number for Celsius temperature.")
+    
+    else:
+        print("Invalid choice. Please enter '1', '2' or 'Q': ")'''
+
+#############################################
+
+def print_menu():
+    print("\nMenu:")
+    print("1. Add an element to the list")
+    print("2. Remove an element from the list")
+    print("3. Search for an element in the list")
+    print("4. Sort the list")
+    print("5. Print the list")
+    print("6. Quit")
+
+def add_element(lst):
+    try:
+        num = int(input("Enter an integer to add to the list: "))
+        lst.append(num)
+        print(f"{num} added to the list.")
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+
+def remove_element(lst):
+    try:
+        num = int(input("Enter an integer to remove from the list: "))
+        if num in lst:
+            lst.remove(num)
+            print(f"{num} removed from the list.")
+        else:
+            print(f"{num} not found in the list.")
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+
+def search_element(lst):
+    try:
+        num = int(input("Enter an integer to search in the list: "))
+        if num in lst:
+            print(f"{num} found in the list.")
+        else:
+            print(f"{num} not found in the list.")
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+
+def sort_list(lst):
+    lst.sort()
+    print("List sorted in ascending order:", lst)
+
+def print_list(lst):
+    print("Current list:", lst)
+
+def main():
+    lst = []
+    print("Welcome to the list management program!")
+    
+    while True:
+        print_menu()
+        choice = input("Enter your choice (1-6): ")
+
+        if choice == '1':
+            add_element(lst)
+        elif choice == '2':
+            remove_element(lst)
+        elif choice == '3':
+            search_element(lst)
+        elif choice == '4':
+            sort_list(lst)
+        elif choice == '5':
+            print_list(lst)
+        elif choice == '6':
+            print("Exiting the program...")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 6.")
+
+    print("Thank you for using the list management program!")
+
+if __name__ == "__main__":
+    main()
 
 
 
