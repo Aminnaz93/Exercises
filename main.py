@@ -2758,3 +2758,32 @@ print(sum_list)'''
 
 #####################################
 
+'''def reverse_word(word):
+    return word[::-1]
+
+
+print("Welcome to the reverse word program. ")
+
+words = []
+reversed_words = []
+
+while True:
+    user_input = input("Type a word or press 'Q' to enter: ")
+
+
+    if user_input == "Q".lower():
+        print("Exiting the program...")
+        break
+
+
+    words.append(user_input) 
+    reversed_word = reverse_word(user_input)
+    reversed_words.append(reversed_word)
+
+    print("The original word and the reversed word: ")
+
+    for i in range(len(words)): 
+        print(f"{words[i]} -> {reversed_words[i]}")'''
+
+####################################
+    
