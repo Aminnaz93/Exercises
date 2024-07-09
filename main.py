@@ -2787,3 +2787,24 @@ while True:
 
 ####################################
     
+from classes import *
+def main():
+
+    print("Welcome to the Geometry Program.")
+    print("This program will demonstrate the use of classes to handle geometric shapes.\n")
+
+    #objekt för rektangel klassen.
+    rect = Rectangle(5,10)
+    #objekt för cirkel klassen.
+    circle = Circle(7)
+
+    rect.print_details()
+
+    print()
+
+    circle.print_details()
+
+if __name__ == "__main__":
+    main()
+
+
