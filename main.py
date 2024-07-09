@@ -2787,7 +2787,7 @@ while True:
 
 ####################################
     
-from classes import *
+'''from classes import *
 def main():
 
     print("Welcome to the Geometry Program.")
@@ -2805,6 +2805,16 @@ def main():
     circle.print_details()
 
 if __name__ == "__main__":
-    main()
+    main()'''
+
+####################################
+
+'''from functions import *
+
+sum = add(2,3)
+
+print(sum)'''
+
+####################################
 
 
