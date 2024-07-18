@@ -2823,5 +2823,25 @@ myList.reverse()
 
 print(myList)
 
+print()
+
 for i in myList:
     print(i)
+
+
+myList.sort()
+
+print()
+
+for i in range(len(myList)):
+    print(i)
+
+
+print()
+
+for i in range(1, 10 + 1):
+    print("*" * i)
+
+####################################
+
+
