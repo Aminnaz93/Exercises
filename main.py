@@ -2817,7 +2817,7 @@ print(sum)'''
 
 ####################################
 
-myList = [1,2,3,4,5,6,7,8,9,10]
+'''myList = [1,2,3,4,5,6,7,8,9,10]
 
 myList.reverse()
 
@@ -2840,8 +2840,161 @@ for i in range(len(myList)):
 print()
 
 for i in range(1, 10 + 1):
-    print("*" * i)
+    print("*" * i)'''
+
+####################################
+
+'''print("Welcome to the vote app. ")
+
+
+while True:
+
+    userInput = input("Type in your age or press Q to quit the app: ").lower()
+
+    if userInput >= "Q".lower():
+        print("Thank you for voting.")
+        break
+
+    age = int(userInput)
+    VotinAge = 18
+
+    try:   
+        if age == VotinAge:
+            print("Congratulations.. You can vote!!")
+            break
+        else:
+            print("You cannot vote. Try again. ")
+            continue
+
+    except ValueError:
+        print("You are not valid to vote.")
+        continue'''
+
+
+####################################
+
+'''print("Welcome to the voting app!!")
+
+
+while True:
+
+    userInput = input("Type in your age or press 'Q' to quit: ")
+
+    if userInput == "Q".lower():
+        print("Thank you for using the voting app!")
+        break
+
+    
+    age = int(userInput)
+    votingAge = 18
+
+    try:
+        if votingAge >= age:
+            print("Congratulations. You have voted!! ")
+            break
+        else:
+            print("You are to young. Please try again and vote! ")
+            continue
+    
+    except ValueError:
+        print("Invalid type in.")'''
+     
+    
+####################################
+
+
+
+'''print("Welcome to the Contact Register! ")
+
+def display_menu():
+    print("Contact Register Menu: ")
+    print("1. Add Contact")
+    print("2. View Contacts")
+    print("3. Remove Contact")
+    print("4. Exit")
+
+def add_contacts(contact_list):
+    name = input("Enter the contact's name: ")
+    phone_number = input("Enter the contact's phone number: ")
+    contact_list.appened("Name: ", name, "Phone number: ", phone_number)
+    print(f"Contact {name} added succesfully!")
+
+def view_contacts(contact_list):
+    if contact_list:
+        print("\nContact list: ")
+        for contact in contact_list:
+            print(f"Name: {contact['name']}, Phone Number: {contact['phone_number']}")
+
+    else:
+        print("Contact not available.")
+
+def remove_contact():
+    name = input("Enter the name of the contact you want to remove: ")
+    contact_found = False  
+    for contact in contact_list:
+        if contact['name'].lower() == name.lower():
+            contact_list.remove(contact)
+            print(f"Contact {name} removed successfully!")
+            contact_found = True
+            break
+        if not contact_found:
+            print(f"No contact found with the name {name}.")
+
+
+def main():
+    """Main function to run the contact register program."""
+    contact_list = []  # List to store contacts
+
+    print("Welcome to the Contact Register!")
+
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1-4): ")
+
+        if choice == '1':
+            add_contacts(contact_list)
+        elif choice == '2':
+            view_contacts(contact_list)
+        elif choice == '3':
+            remove_contact(contact_list)
+        elif choice == '4':
+            print("Thank you for using the Contact Register. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select a valid option.")
+
+if __name__ == "__main__":
+    main()'''
+
 
 ####################################
 
 
+password = "Hello"
+
+while True:
+    userInput = input("Write in your password: ")
+
+    if userInput == "Hello":
+        print("Correct!")
+        break
+    elif userInput != "Hello":
+        print("Incorrect")
+        continue
+    else:
+        "Fuck you"
+
+
+
+myList = [1,2,3,4,5,6,7,8,9,10]
+
+myList.append(40)
+
+print(myList)
+
+for i in range(len(myList)):
+    print(myList)
+
+
+
+####################################
