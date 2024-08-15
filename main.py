@@ -3000,3 +3000,36 @@ for i in range(len(myList)):
 ####################################
 
 
+print("Welcome to something..")
+
+myList = []
+
+while True:
+    userInput = input("Type in something or press 'Q' to quit: ").lower()
+
+    if userInput == "q":
+        print("Thank you for something and now we end.")
+        break
+
+    if userInput == "fuck":
+      
+        element = input("Enter a value to add to the list: ")
+        myList.append(element)
+        print("Current list:", myList)
+    
+    elif userInput.isdigit(): 
+        number = int(userInput) 
+        if number == 4:
+            myList.reverse() 
+            print("Reversed list:", myList)
+        else:
+            print("Number is not 4, so the list is not reversed.")
+    
+    elif userInput == "hello":
+        print("ajjajajaaja")
+
+    else:
+        print("Invalid input")
+
+print("Thank you for nothing....")
+
