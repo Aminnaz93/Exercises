@@ -3000,7 +3000,7 @@ for i in range(len(myList)):
 ####################################
 
 
-print("Welcome to something..")
+'''print("Welcome to something..")
 
 myList = []
 
@@ -3031,5 +3031,12 @@ while True:
     else:
         print("Invalid input")
 
-print("Thank you for nothing....")
+print("Thank you for nothing....")'''
+
+####################################
+
+
+file = open("test.txt" , 'r')
+
+print(file.read())
 
