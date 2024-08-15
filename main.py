@@ -3115,5 +3115,31 @@ if __name__ == "__main__":
 
 ####################################
 
+'''from random import choice
+
+# List of animes with correct structure
+animes = [
+    ['Naruto', 'Pepehype', 'Forever', 'Series'],
+    ['Haikyuu', 'Sports', 'Short', 'Series'],
+    ['Mushishi', 'Chill', 'Short', 'Series'],
+    ['March comes in like a lion', 'Slice of life', 'Short', 'Series']
+]
+
+# Input mood
+mood = input("What mood are you in? ").strip()
+
+# Loop through person's mood and find matching anime
+found = False  # Flag to check if any match is found
+for item in animes:
+    if item[1].lower() == mood.lower():
+        print(f"{mood} anime: {item[0]}")
+        found = True
+
+if not found:
+    print("No anime found for the mood you entered.")'''
+
+
+####################################
+
 
 
