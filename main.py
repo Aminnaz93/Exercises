@@ -3043,7 +3043,7 @@ print(file.read())'''
 
 ####################################
 
-def print_board(board):
+'''def print_board(board):
     """Prints the Tic-Tac-Toe board."""
     print(" " + board[0] + " | " + board[1] + " | " + board[2])
     print("-----------")
@@ -3111,7 +3111,7 @@ def tic_tac_toe():
 
 
 if __name__ == "__main__":
-    tic_tac_toe()
+    tic_tac_toe()'''
 
 ####################################
 
@@ -3194,3 +3194,5 @@ while max(player_scores) < max_score:
 
 
 ####################################
+
+
