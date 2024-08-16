@@ -3150,50 +3150,85 @@ def roll():
     roll = random.randint(min_value, max_value)
     return roll
 
-while True:
-    players = input("Enter the number of players (2-4): ")
-    
-    if players.isdigit():
-        players = int(players)
-        if 2 <= players <= 4:
-            break
-        else:
-            print("The number of players must be between 2 and 4.")
-    else:
-        print("Invalid input. Please enter a number between 2 and 4.")
+def print_scores(player_scores):
+    """Prints the current scores of all players."""
+    print("Current scores:")
+    for idx, score in enumerate(player_scores):
+        print(f"Player {idx + 1}: {score}")
 
-max_score = 50
-player_scores = [0 for _ in range(players)]
-
-while max(player_scores) < max_score:
-    for player_idx in range(players):
-        print(f"\nPlayer {player_idx + 1}'s turn has just started!\n")
-        current_score = 0
-
-        while True:
-            should_roll = input("Would you like to roll (y)? ").lower()
-            if should_roll != "y":
-                break
-
-            value = roll()
-            if value == 1:
-                print("You rolled a 1! Turn over.")
-                current_score = 0
+def main():
+    while True:
+        players = input("Enter the number of players (2-4): ")
+        
+        if players.isdigit():
+            players = int(players)
+            if 2 <= players <= 4:
                 break
             else:
-                current_score += value
-                print(f"You rolled a {value}.")
-                print(f"Your current score for this turn is: {current_score}")
+                print("The number of players must be between 2 and 4.")
+        else:
+            print("Invalid input. Please enter a number between 2 and 4.")
 
-        player_scores[player_idx] += current_score
-        print(f"Player {player_idx + 1}'s total score is: {player_scores[player_idx]}")
-    
-print("Game over!")
-print("Final scores:")
-for idx, score in enumerate(player_scores):
-    print(f"Player {idx + 1}: {score}")
+    max_score = 50
+    player_scores = [0 for _ in range(players)]
+
+    while max(player_scores) < max_score:
+        for player_idx in range(players):
+            print(f"\nPlayer {player_idx + 1}'s turn has just started!\n")
+            print_scores(player_scores)
+            current_score = 0
+
+            while True:
+                should_roll = input("Would you like to roll (y), not continue (n), or quit (q)? ").lower()
+                if should_roll == "q":
+                    print("Exiting the game...")
+                    # Print final scores and winner
+                    max_score = max(player_scores)
+                    player_winning_idx = player_scores.index(max_score)
+                    print("Final scores:")
+                    for idx, score in enumerate(player_scores):
+                        print(f"Player {idx + 1}: {score}")
+                    print(f"Player {player_winning_idx + 1} is the winner with a score of: {max_score}")
+                    return  # Exit the function and thus the program
+
+                if should_roll == "n":
+                    print(f"Player {player_idx + 1} chose not to continue. Turn skipped.")
+                    break  # Skip this player's turn
+
+                if should_roll != "y":
+                    print("Invalid input. Please enter 'y' to roll, 'n' to skip turn, or 'q' to quit.")
+                    continue
+
+                value = roll()
+                if value == 1:
+                    print("You rolled a 1! Turn over.")
+                    current_score = 0
+                    break
+                else:
+                    current_score += value
+                    print(f"You rolled a {value}.")
+                    print(f"Your current score for this turn is: {current_score}")
+
+            player_scores[player_idx] += current_score
+            print(f"Player {player_idx + 1}'s total score is: {player_scores[player_idx]}")
+            
+            if max(player_scores) >= max_score:
+                break  # Exit the for-loop if any player reaches the maximum score
+
+    print("Game over!")
+    print("Final scores:")
+    for idx, score in enumerate(player_scores):
+        print(f"Player {idx + 1}: {score}")
+
+    max_score = max(player_scores)
+    player_winning_idx = player_scores.index(max_score)
+    print(f"Player {player_winning_idx + 1} is the winner with a score of: {max_score}")
+
+if __name__ == "__main__":
+    main()
 
 
 ####################################
+
 
 
