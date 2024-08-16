@@ -3141,7 +3141,7 @@ if not found:
 
 ####################################
 
-import random
+'''import random
 
 def roll():
     """Simulates rolling a die with values between 1 and 6."""
@@ -3225,10 +3225,9 @@ def main():
     print(f"Player {player_winning_idx + 1} is the winner with a score of: {max_score}")
 
 if __name__ == "__main__":
-    main()
+    main()'''
 
 
 ####################################
-
 
 
