@@ -3230,11 +3230,37 @@ if __name__ == "__main__":
 
 ###################################
 
-with open("story.txt" , 'r') as f:
+# Open and read the story file
+with open("story.txt", 'r') as f:
     story = f.read()
 
-words = []
+# Initialize variables
+words = set()
 start_of_word = -1
 
+target_start = "<"
+target_end = ">"
+
+# Extract words between < and >
 for i, char in enumerate(story):
-    
+    if char == target_start:
+        start_of_word = i
+    if char == target_end and start_of_word != -1:
+        word = story[start_of_word: i + 1]
+        words.add(word)
+        start_of_word = -1 
+
+# Initialize a dictionary to store user inputs
+answers = {}
+
+# Collect user input for each extracted word
+for word in words:
+    user_input = input("Enter a word for " + word + ": ")
+    answers[word] = user_input
+
+# Replace each placeholder in the story with the user's input
+for word in words:
+    story = story.replace(word, answers[word])
+
+# Print the modified story
+print(story)
