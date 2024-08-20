@@ -3268,7 +3268,7 @@ print(story)'''
 
 ###################################
 
-import random
+'''import random
 import time
 
 OPERATORS = ['+', '-', '*']
@@ -3315,4 +3315,35 @@ def main():
     print(f"You got {wrong} problems wrong.")
 
 if __name__ == "__main__":
-    main()
+    main()'''
+
+
+###################################
+
+print("Welcome to the voting app!")
+
+
+while True:
+
+    user_input = input("Enter your age or press 'Q' to quit: ")
+
+    if user_input == "q".lower():
+        print("Thank you for using this app. ")
+        break
+
+    age = int(user_input)
+    voting_age = 18
+
+    
+    try: 
+        if age < voting_age:
+            print("You cannot vote until your 18 years old. please comeback when you are 18 ")
+            continue
+        else:
+            print("Thank you for voting!")
+
+    except ValueError:
+        print("Invalid type in.")
+        continue
+
+        
