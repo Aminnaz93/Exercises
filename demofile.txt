@@ -1,0 +1,44 @@
+def räkna_sätt(att_önskat_belopp, mynt):
+    # Skapa en lista för att hålla reda på antalet sätt att göra varje belopp
+    sätt = [0] * (att_önskat_belopp + 1)
+    sätt[0] = 1  # Det finns alltid exakt ett sätt att inte använda några mynt för att göra beloppet 0
+
+    # Lägg till bidrag från varje mynt ett i taget
+    for myntet in mynt:
+        for belopp in range(myntet, att_önskat_belopp + 1):
+            sätt[belopp] += sätt[belopp - myntet]
+
+    # Antalet sätt att göra det önskade beloppet
+    return sätt[att_önskat_belopp]
+
+# Mynt som är tillgängliga
+tillgängliga_mynt = [1, 2, 5, 10, 20, 50, 100, 200]
+
+# Beräknar hur många olika sätt vi kan göra 200 pence, vilket motsvarar 2 pund
+print(räkna_sätt(200, tillgängliga_mynt))
+
+
+
+
+
+
+
+
+def coin_sums(total, coins):
+    # Skapar en lista för att spara antalet sätt att göra varje belopp upp till 'total'
+    ways = [0] * (total + 1)
+    ways[0] = 1  # Det finns ett sätt att göra 0 pund, d.v.s. inte använda några mynt alls
+
+    # Uppdatera listan för varje mynt
+    for coin in coins:
+        for i in range(coin, total + 1):
+            ways[i] += ways[i - coin]
+
+    # Returnerar antalet sätt att göra 'total' pund
+    return ways[total]
+
+# Myntvärden som finns tillgängliga
+coins = [1, 2, 5, 10, 20, 50, 100, 200]
+
+# Beräkna antalet sätt att göra 200p (2 pund)
+print(coin_sums(200, coins))

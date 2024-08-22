@@ -3320,7 +3320,7 @@ if __name__ == "__main__":
 
 ###################################
 
-print("Welcome to the voting app!")
+'''print("Welcome to the voting app!")
 
 
 while True:
@@ -3344,6 +3344,71 @@ while True:
 
     except ValueError:
         print("Invalid type in.")
-        continue
+        continue'''
 
-        
+
+###################################
+
+'''class Dog:
+    def __init__(self, name,age,race,sound):
+        self.name = name
+        self.age = age
+        self.race = race
+        self.sound = sound
+
+    
+    def get_name(self):
+        return self.name
+    
+    def get_age(self):
+        return self.age
+    
+    def get_race(self):
+        return self.race
+    
+    def get_sound(self):
+        return self.sound
+    
+    def age_in_dog_year(self):
+        return self.age * 7
+
+    
+
+dog1 = Dog("Amin", 30, "Pitbull", "Voff voff")
+
+print(dog1.name)
+
+print(dog1.age_in_dog_year())'''
+
+
+
+###################################
+
+''' total_sum = 0
+
+
+for i in range(1,1000):
+    if i % 3 == 0 or i % 5 == 0:
+        total_sum += i
+
+
+print(total_sum)
+
+set1 = set()
+
+print(type(set1))'''
+
+###################################
+
+'''import sys
+
+argument = map(int, sys.argv[1:])
+
+total_sum = sum(argument)
+
+print(total_sum)'''
+
+###################################
+
+
+
