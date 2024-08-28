@@ -3410,11 +3410,12 @@ print(total_sum)'''
 
 ###################################
 
-def anagram(word1, word2):
-
+'''def anagram(word1,word2): 
+    
     return sorted(word1.lower()) == sorted(word2.lower())
 
 
-
-print(anagram("listen", "silent"))
+print(anagram("listen","Silent"))
 print(anagram("apple", "aple"))
+'''
+
