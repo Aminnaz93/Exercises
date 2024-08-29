@@ -3420,3 +3420,25 @@ print(anagram("apple", "aple"))
 '''
 
 ###################################
+
+'''
+count = 1
+
+while count < 11:
+    print(count)
+    count += 1'''
+
+
+###################################
+
+def find_missing_number(lst):
+    n = len(lst)  # Antalet element i listan borde vara n när inget saknas
+    expected_sum = n * (n + 1) // 2  # Summan av alla tal från 0 till n
+    actual_sum = sum(lst)  # Summan av talen i listan
+    return expected_sum - actual_sum  # Skillnaden är det saknade talet
+
+# Testa funktionen
+print(find_missing_number([3, 0, 1]))  # Borde returnera 2
+print(find_missing_number([1]))  # Borde returnera 0
+print(find_missing_number([9,6,4,2,3,5,7,0,1]))  # Borde returnera 8
+
