@@ -3431,7 +3431,7 @@ while count < 11:
 
 ###################################
 
-def find_missing_number(lst):
+'''def find_missing_number(lst):
     n = len(lst)  # Antalet element i listan borde vara n när inget saknas
     expected_sum = n * (n + 1) // 2  # Summan av alla tal från 0 till n
     actual_sum = sum(lst)  # Summan av talen i listan
@@ -3441,4 +3441,6 @@ def find_missing_number(lst):
 print(find_missing_number([3, 0, 1]))  # Borde returnera 2
 print(find_missing_number([1]))  # Borde returnera 0
 print(find_missing_number([9,6,4,2,3,5,7,0,1]))  # Borde returnera 8
+'''
 
+###################################
