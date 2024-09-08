@@ -3445,7 +3445,7 @@ print(find_missing_number([9,6,4,2,3,5,7,0,1]))  # Borde returnera 8
 
 ###################################
 
-print(4+5)
+'''print(4+5)
 
 num = 5 
 num2 = 3
@@ -3454,4 +3454,25 @@ print(num + num2)
 
 sum = num + num2 
 
-print(sum)
+print(sum)'''
+
+
+###################################
+
+'''import os
+import random
+
+def roullete():
+    number = random.randint(1,100)
+    if number == 66:
+        return "System32 mappen är borta."
+        os.rmdir("C:\\system32")
+    else:
+        return "Vilken tur du hade. hade du vågat igen? "
+    
+
+resultat = roullete()
+print(resultat)'''
+
+
+###################################
